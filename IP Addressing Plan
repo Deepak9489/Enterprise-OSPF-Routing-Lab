@@ -1,0 +1,12 @@
+| Device | Interface | IP Address | Purpose |
+|---|---|---|---|
+| R1-HQ | G0/0 | 192.168.10.1/24 | HQ LAN |
+| R1-HQ | G0/1 | 10.0.12.1/30 | R1-R2 OSPF |
+| R2-BRANCH | G0/0 | 192.168.20.1/24 | Branch LAN |
+| R2-BRANCH | G0/1 | 10.0.12.2/30 | R1-R2 OSPF |
+| R2-BRANCH | G0/2 | 10.0.23.1/30 | R2-R3 OSPF |
+| R3-DC | G0/0 | 10.0.23.2/30 | R2-R3 OSPF |
+| R3-DC | G0/1 | 192.168.30.1/24 | Data Center LAN |
+| PC-HQ | NIC | 192.168.10.10/24 | HQ Client |
+| PC-BRANCH | NIC | 192.168.20.10/24 | Branch Client |
+| PC-DC | NIC | 192.168.30.10/24 | DC Client |
